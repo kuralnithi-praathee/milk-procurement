@@ -9,7 +9,6 @@ export const ViewProductsDelivered = () => {
     const breadcrumbs = [
         {
           name: "Delivered Orders",
-          name: "Delivered Orders",
           path: `/home`,
           font: "bold"
         },
