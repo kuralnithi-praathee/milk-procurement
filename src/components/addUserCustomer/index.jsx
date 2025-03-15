@@ -4,6 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaPhone, FaEdit, FaWallet } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import Searchbar from "../../common/searchbar";
 
 // Dummy Data Array
 const usersData = [
@@ -73,16 +74,8 @@ export default function Index() {
     <Container fluid className="mt-4">
       {/* Search Bar */}
       <div className="d-flex justify-content-start mb-3">
-        <InputGroup className="mb-3" style={{ maxWidth: "30%" }}>
-          <Form.Control
-            type="text"
-            placeholder="Search user..."
-            style={{ borderRadius: "8px" }}
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-        </InputGroup>
-      </div>
+      <Searchbar searchTerm={searchTerm} handleChange={(e) => setSearchTerm(e.target.value)} /></div>
+
 
       {/* User Cards Grid */}
       <Row className="g-3">
