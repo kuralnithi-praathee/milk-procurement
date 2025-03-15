@@ -65,7 +65,7 @@ export default function Index() {
       console.log(`Selected delivery date for ${selectedUser.name}: ${selectedDate}`);
       setShowModal(false);
       navigate('/productList');
-    } else {
+    } else { 
       alert("Please select a delivery date.");
     }
   };
