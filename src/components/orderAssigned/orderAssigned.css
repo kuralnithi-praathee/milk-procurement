@@ -1,0 +1,39 @@
+/* Full-Screen Centered Layout */
+.confirmation-container {
+  height:60vh;
+  display: flex;
+  /* background: linear-gradient(to bottom, #e8f5e9, #c8e6c9); */
+}
+
+/* Glassmorphism Card */
+.order-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Checkmark Icon */
+.check-icon {
+  font-size: 80px;
+  color: #229C47;
+}
+
+/* Done Button */
+.done-btn {
+  background-color: #229C47;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.done-btn:hover {
+  background-color: #1a7d36;
+  transform: scale(1.05);
+}

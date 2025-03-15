@@ -1,0 +1,44 @@
+Card Styling
+.user-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active Card */
+.user-card.active {
+  background: #229C47;
+  color: white;
+}
+
+/* Hover Effect */
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Top-Right Corner Accent */
+.corner-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #229C47;
+  clip-path: polygon(100% 0, 0% 0, 100% 100%);
+}
+
+/* Ensure Text is Readable */
+.user-card .quantity,
+.user-card .user-info {
+  position: relative;
+  z-index: 2;
+}

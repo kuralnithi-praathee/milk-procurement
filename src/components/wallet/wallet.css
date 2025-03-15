@@ -1,0 +1,58 @@
+/* Wallet Card - Visible Background */
+.wallet-card {
+    background: linear-gradient(45deg, #229C47, #1A7F37); /* Ensure visibility */
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .wallet-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Add Money Button */
+  .add-btn {
+    background: linear-gradient(45deg, #229C47, #1A7F37);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    background: linear-gradient(45deg, #1A7F37, #229C47);
+    transform: scale(1.05);
+  }
+  
+  /* Transactions Table */
+  .transactions {
+    max-width: 800px;
+  }
+  
+  .table-header {
+    background: #229C47;
+    color: white;
+  }
+  
+  .table-header th {
+    padding: 12px;
+  }
+  
+  /* Responsive & Spacing */
+  .add-money {
+    max-width: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .wallet-card {
+      max-width: 90%;
+    }
+    .add-money, .transactions {
+      max-width: 100%;
+    }
+  }
+  
